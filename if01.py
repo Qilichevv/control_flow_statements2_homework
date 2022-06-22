@@ -1,3 +1,6 @@
+from operator import truediv
+
+
 def main(a,b,c):
     """
     Find the largest of the numbers.
@@ -8,6 +11,15 @@ def main(a,b,c):
     Returns:
         int: return answer.
     """
-    return print(a and b)
-    print(a or c)
-    print(not a)
+    if a>b and b>c:
+        return a
+    if a>c or c>b:
+        return a
+    if b>a and b>c:
+        return b
+    if a>b or c>b:
+        return b
+    if c>a and c>b:
+        return c
+    if a>c or b>c:
+        return c
