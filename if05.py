@@ -6,27 +6,25 @@ def main(n):
     Returns:
         int: return answer.
     """
+    s=0
     x1=n%10
     n//=10
-
+    if(s<x1):
+        s=x1
     x2=n%10
     n//=10
-
+    if(s<x2):
+        s=x2
     x3=n%10
     n//=10
-
+    if(s<x3):
+        s=x3
     x4=n%10
     n//=10
-
+    if(s<x4):
+        s=x4
     x5=n%10
     n//=10
-    if x1>=x2 and x1>=x3 and x1>=x4 and x1>=x5:
-        return x1
-    if x2>=x1 and x2>=x3 and x2>=x4 and x2>=x5:
-        return x2
-    if x3>=x1 and x3>=x2 and x3>=x4 and x3>=x5:
-        return x3
-    if x4>=x1 and x4>=x2 and x4>=x3 and x4>=x5:
-        return x4
-    if x5>=x1 and x5>=x2 and x5>=x3 and x5>=x4:
-        return x5
+    if(s<x5):
+        s=x5
+    return s
