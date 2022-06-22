@@ -8,6 +8,6 @@ def main(a,b,c):
     Returns:
         int: return answer.
     """
-    return print(a and b)
+    return print(a or b)
     print(a or c)
     print(not a)
