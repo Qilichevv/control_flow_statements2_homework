@@ -10,4 +10,4 @@ def main(a,b,c):
     """
     return print(a and b)
     print(a or c)
-    print(a)
+    print(not a)
